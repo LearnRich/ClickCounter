@@ -3,7 +3,7 @@
 <section>
 {% if counter >= 0 %}
 	<div>Count: {{counter}}</div>
-	<div><a href="{{ url_for('home.count') }}">Increase</a></div>
+	<div><a href="{{ url_for('count') }}">Increase</a></div>
 {% else %}
 	<div>No Counter</div>
 {% endif %}

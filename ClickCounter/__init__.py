@@ -1,6 +1,5 @@
 from flask import Flask
 
-
 counter = 0
 
 def create_app():
