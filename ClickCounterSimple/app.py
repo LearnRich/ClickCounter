@@ -1,6 +1,8 @@
 from flask import Flask, url_for, redirect, render_template
 
 app = Flask(__name__)
+app.config['FLASK_ENV'] = 'Development'
+app.config['DEBUG'] = True
 
 counter = 0
 
@@ -16,4 +18,4 @@ def count():
     return redirect(url_for('landing_page'))
 
 if __name__ == '__main__':
-    app.run(debug=True, host="127.0.0.1", port="8080")
+    app.run(host="127.0.0.1", port="8080")
